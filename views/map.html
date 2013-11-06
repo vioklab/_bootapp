@@ -1,0 +1,18 @@
+<!-- MAP DIRECTIVE -->
+<map id="map_canvas"></map>
+<!-- LIST ITEMS -->
+<div class="row-fluid">
+	<ul class="mobileMainNav" ng-repeat="space in _spaces.features">
+		<li>
+			<header class='corners-4'>
+				<!-- <div >{{space.properties.type}}</div>
+				<div>{{space.properties.city}},{{space.properties.country}}</div> -->
+			</header>
+			<h4>{{space.properties.name}}</h4>
+			<a  href='{{space.properties.url}}'>{{space.properties.url}}</a>
+			<div>{{space.properties.address}}</div>
+			<div>{{space.properties.description}}</div>
+		</li>
+	</ul>
+</div>
+
